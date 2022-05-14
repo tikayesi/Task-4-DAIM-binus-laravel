@@ -19,26 +19,108 @@
             body {
                 font-family: 'Nunito', sans-serif;
             }
+
+.panel-blue{
+    background:#5bc0de;
+}
+.panel-tw{
+    background:#5bc0de;
+}
+.panel-fb {
+    background:#3b5998
+}
+.panel-in{
+    background:#5cb85c;
+}
+.panel-content .fa {
+    color:#ffffff;
+}
+.panel-dl{
+   background:#428bca;
+}
+.panel-content p{
+    font-weight:bold !important;
+    color:#FFFFFF;
+}
+
         </style>
     </head>
     <body class="antialiased">
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <div class="container-fluid">
-                  <a class="navbar-brand" href="#">Home</a>
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
-                      <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="/role">Role</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#">User</a>
-                      </li>
-                    </ul>
-                  </div>
+        @include('navigation.nav')
+        <link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+<div class="container">
+<div class="row">
+    <div class="col-lg-12">
+        <h1>The BullWhip Effect <small>And Your Supply Chain</small></h1>
+        <ol class="breadcrumb">
+    		<li class="active"><i class="fa fa-dashboard"></i> Dashboard</li>
+		</ol>
+        <div class="alert alert-success alert-dismissable">
+    		{{-- <button aria-hidden="true" data-dismiss="alert" class="close" type="button">×</button> --}}
+			Untuk mencapai efesiensi supply chain dibutuhkan tiga aspek kunci dari supply chain management yaitu mengatur aliran fisik material, mengatur aliran informasi, dan mengatur struktur organisasi dari kegiatan supply chain. Hambatan yang mungkin dialami dalam supply chain management yaitu semakin banyaknya variasi produk, menurunnya daur hidup produk, peningkatan permintaan konsumen, fragmentation of supply chain ownership, era globalisasi ( Chopra dan Meindl, 2001).
+
+BULLWHIP EFFECT adalah fenomena permintaan yang sebenarnya cukup stabil pada tingkat konsumen akhirnya akan berubah menjadi fluktuatif di bagian hulu supply chain, makin ke hulu maka peningkatan itu akan semakin besar
+		</div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-3">
+        <div class="panel panel-default ">
+            <div class="panel-body panel-tw panel-content">
+                <div class="col-xs-5">
+                    <i class="fa fa-user fa-5x"></i>
                 </div>
-              </nav>
+                <div class="col-xs-5 text-right">
+                    <i class="fa fa-arrow-circle-right"></i>
+                    <p class="alerts-heading tex">112</p>
+                    <p class="alerts-text tex">Pegawai</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="panel panel-default ">
+            <div class="panel-body panel-fb panel-content">
+                <div class="col-xs-5">
+                    <i class="fa fa-bars fa-5x"></i>
+                </div>
+                <div class="col-xs-5 text-right">
+                    <i class="fa fa-arrow-circle-right"></i>
+                    <p class="alerts-heading tex ">1234</p>
+                    <p class="alerts-text tex">Barang</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="panel panel-default ">
+            <div class="panel-body panel-in panel-content">
+                <div class="col-xs-5">
+                    <i class="fa fa-money fa-5x"></i>
+                </div>
+                <div class="col-xs-5 text-right">
+                    <i class="fa fa-arrow-circle-right"></i>
+                    <p class="alerts-heading tex">800</p>
+                    <p class="alerts-text tex">Transaksi</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="panel panel-default ">
+            <div class="panel-body panel-dl panel-content">
+                <div class="col-xs-5">
+                    <i class="fa fa-gears fa-5x"></i>
+                </div>
+                <div class="col-xs-5 text-right">
+                    <i class="fa fa-arrow-circle-right"></i>
+                    <p class="alerts-heading tex">2000</p>
+                    <p class="alerts-text tex">Produksi</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
     </body>
 </html>
